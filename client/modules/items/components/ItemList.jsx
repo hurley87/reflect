@@ -1,9 +1,13 @@
 import React from 'react';
 import Item from './Item.jsx'
 import { Row, Col, Glyphicon } from 'react-bootstrap';
+import ItemProgress from './ItemProgress.jsx';
 
 const ItemList = ( { content }) => (
   <Row className='show-grid'>
+    <Col xs={12}>
+      <PageHeader>Impossible List</PageHeader>
+    </Col>
     <Col xs={12}>
       <a href='/edit'><Glyphicon glyph='plus'></Glyphicon> Add Item</a>
     </Col>
